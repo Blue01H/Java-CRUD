@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="Form.css">
+</head>
+<body>
+	
+	<div class = "container">
+	 <h1>Account Options:</h1>
+	</div>
+
+<form action = "./changenameServlet">
+  <div class="container">
+    <p>Change your Name</p>
+    <hr>
+    
+	<label for ="name"><b>Name</b></label>
+    <input type ="text" placeholder ="Enter Name" name = "name1" required>
+    <hr>
+
+    <button type="submit" class="registerbtn">Change</button>
+  </div> 
+</form>
+
+<form action = "./changepasswordServlet">
+  <div class="container">
+    <p>Change your Password</p>
+    
+    <hr>
+	<label for ="password"><b>Password</b></label>
+    <input type ="password" placeholder ="Enter Password" name = "password1" required>
+
+    <label for ="password"><b>Repeat Password</b></label>
+    <input type ="password" placeholder ="Enter Password" name = "password2" required>
+    <hr>
+
+    <button type="submit" class="registerbtn">Change</button>
+  </div> 
+</form>
+
+<form action = "./logoutServelt">
+  <div class="container">
+  <p>Close Your Session:</p>
+    <button type="submit" class="registerbtn">Logout</button>
+  </div>
+  
+</form>
+
+</body>
+</html>
